@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web semana 2 </title>
+    <script src="https://kit.fontawesome.com/96a4beeccd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="pagina.js" async defer ></script>
+</head>
+
+<body>
+    <div id="encabezado">
+        <header>
+            <h1 class="logo">
+                <a href="https://egg.live/" class="fuente-acento">Mi Web</a>
+            </h1>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="#seccion1">acerca de mi</a></li>
+                    <li><a href="#trabajos">trabajo</a></li>
+                    <li><a href="#contactos">contactos</a></li>
+                    <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="seccion-principal">
+
+            <section id="seccion1">
+                <div class="acerca-de-mi">
+                    <h2>Acerca de mí</h2>
+                    <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+                    <p class="parrafo2">Hola me llamo Martin, soy del departamento de artigas y vivo en Montevideo, me gusta pasear, comer helado y ver peliculas mientas como helado y paseo.</p>
+                </div>
+            
+                <div class="img-container">
+                    <img src="img/foto.jpeg" alt="imagen-personal" width="400" height="400">
+                </div>
+            </section>
+        
+            <section id="seccion2">
+                <img src="img/img-carrusel.avif" alt="imagen carrusel">
+            </section>
+
+            <section>
+                <div id="trabajos">
+                    <ul class="trabajos-lista">
+                        <li class="trabajo">
+                            <img src="img/trabajo.jpg" alt="trabajo 1" class="img1">
+                            <h1>Titulo 1</h1>
+                            <h3>Lorem ipsum dolor.</h3>
+                        </li>
+            
+                        <li class="trabajo">
+                            <img src="img/trabajo.jpg" alt="trabajo 2" class="img1">
+                            <h1>Titulo 2</h1>
+                            <h3>Lorem ipsum dolor.</h3>
+                        </li>
+            
+                        <li class="trabajo">
+                            <img src="img/trabajo.jpg" alt="trabajo 3" class="img1">
+                            <h1>Titulo 3</h1>
+                            <h3>Lorem ipsum dolor.</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+                <h1>Contacto</h1>
+                <p><em>¡Esperamos tu consulta!</em></p>
+          
+                <form action="" method="get" class="formulario" id="form">
+                  <div class="form-row">
+                      <label for="nombre">Nombre</label>
+                      <input id="nombre" name="nombre" type="text" />
+                  </div>
+          
+                  <div class="form-row">
+                      <label for="email">Email</label>
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="pepe@gmail.com"
+                        required
+                      />
+                  </div>
+          
+                  <div class="form-row">
+                      <label for="mensaje">Mensaje</label>
+                      <textarea id="mensaje" name="mensaje"></textarea>
+                  </div>
+          
+                  <div class="form-row">
+                      <button>Enviar</button>
+                  </div>
+          
+                  <p class="alertas" id="alertas"></p>
+                </form>
+            
+            <footer>
+                <div>
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>X</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+            </footer>
+    <a href="https://www.linkedin.com/in/martinorellano/" id="boton"></a>
+<script src="script.js"></script>
+</body>
+</html>

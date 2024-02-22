@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(102, 107, 105);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em
+    }
+
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+#seccion1 {
+    background-color: antiquewhite;
+    padding: 2em;
+    display: flex;
+    flex-direction: fill; 
+    align-items: center;
+    text-align: center;
+}
+
+#seccion1 .acerca-de-mi {
+    max-width: 600px; 
+    margin-bottom: 20px; 
+}
+
+#seccion1 img {
+    max-width: 75%;
+    height: auto;
+}
+
+#seccion1 h2 {
+    font-size: xx-large;
+}
+
+#seccion1 p {
+    font-size: larger;
+}
+
+#seccion2 img {
+    width: 100%; /* Hacer que la imagen ocupe el ancho completo en pantallas más pequeñas */
+    height: auto;
+}
+
+
+footer {
+    padding: 1em;
+    background-color:gray;
+}
+
+footer h3 {
+    font-size: x-large;
+    color:azure
+}
+
+footer ul {
+    font-size: large;
+}
+
+#boton {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(img/LinkedIn_icon.svg);
+    background-size: cover;
+    background-color: transparent;
+} 
+
+
+
+#trabajos {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.trabajos-lista {
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trabajo {
+    width: 360px; 
+    margin-bottom: 20px; 
+}
+
+.img1 {
+    border-radius: 50px;
+    width: 300px;
+    height: auto;
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    #seccion1 {
+        background-color: antiquewhite;
+        padding: 2em;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    #seccion2 img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .trabajos {
+        width: 100%;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(18, 13, 112);
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .menu li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: rgb(255, 0, 0);
+    }
+  }
+
+ /* Estilos para el formulario */
+#form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el contenido del formulario */
+}
+
+#form h1 {
+    color: #333;
+    text-align: center;
+}
+
+#form p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#form .form-row {
+    margin-bottom: 20px;
+}
+
+#form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#form input,
+#form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form button:hover {
+    background-color: #45a049;
+}
+
+#form .alertas {
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
